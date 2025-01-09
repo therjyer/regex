@@ -1,9 +1,11 @@
 import re
 
 def verificar_email(email):
-    pattern = r"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(br)$"
+    email = email.strip()
+
+    pattern = r"^[a-zA-Z0-9._-]*[a-z][a-zA-Z0-9._-]*@[a-zA-Z0-9.-]+\.(br)$"
     
-    if re.match(pattern, email):
+    if re.fullmatch(pattern, email):
         print("\nE-mail válido")
     else:
         print("\nE-mail inválido")

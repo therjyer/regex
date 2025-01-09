@@ -22,30 +22,46 @@ def main():
         opcao = input("Digite o número da opção (1-6): ")
         
         if opcao == '1':
-            nome_input = input("Digite o nome: ")
-            name.verificar_nome(nome_input)
+            while True:
+                nome_input = input("Digite o nome: ")
+                if nome_input.lower() == 's':
+                    break
+                name.verificar_nome(nome_input)
         
         elif opcao == '2':
-            cpf_input = input("Digite o CPF: ")
-            cpf.verificar_cpf(cpf_input)
+            while True:
+                cpf_input = input("Digite o CPF: ")
+                if cpf_input.lower() == 's':
+                    break
+                cpf.verificar_cpf(cpf_input)
         
         elif opcao == '3':
-            telefone_input = input("Digite o telefone: ")
-            phone.verificar_telefone(telefone_input)
+            while True:
+                telefone_input = input("Digite o telefone: ")
+                if telefone_input.lower() == 's':
+                    break
+                phone.verificar_telefone(telefone_input)
         
         elif opcao == '4':
-            email_input = input("Digite o e-mail: ")
-            emailv.verificar_email(email_input)
+            while True:
+                email_input = input("Digite o e-mail: ")
+                if email_input.lower() == 's':
+                    break
+                emailv.verificar_email(email_input)
         
         elif opcao == '5':
-            senha_input = input("Digite a senha: ")
-            password.verificar_senha(senha_input)
+            while True:
+                senha_input = input("Digite a senha: ")
+                if senha_input.lower() == 's':
+                    break
+                password.verificar_senha(senha_input)
         
         elif opcao == '6':
             break
         
         else:
             print("Opção inválida. Tente novamente.")
+
 
 if __name__ == "__main__":
     main()
