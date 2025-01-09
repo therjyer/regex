@@ -4,9 +4,9 @@ def verificar_email(email):
     pattern = r"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(br)$"
     
     if re.match(pattern, email):
-        print("E-mail válido")
+        print("\nE-mail válido")
     else:
-        print("E-mail inválido")
+        print("\nE-mail inválido")
 
 def main():
     while True:

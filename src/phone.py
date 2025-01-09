@@ -4,9 +4,9 @@ def verificar_telefone(telefone):
     pattern = r"^(?:\(\d{2}\)\s?|(\d{2}\s))9\d{4}-?\d{4}$"
     
     if re.match(pattern, telefone):
-        print("Telefone válido")
+        print("\nTelefone válido")
     else:
-        print("Telefone inválido")
+        print("\nTelefone inválido")
 
 def main():
     while True:

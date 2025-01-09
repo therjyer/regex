@@ -4,9 +4,9 @@ def verificar_senha(senha):
     pattern = r"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8}$"
     
     if re.match(pattern, senha):
-        print("Senha válida")
+        print("\nSenha válida")
     else:
-        print("Senha inválida")
+        print("\nSenha inválida")
 
 def main():
     while True:

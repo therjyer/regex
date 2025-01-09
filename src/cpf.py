@@ -4,9 +4,9 @@ def verificar_cpf(cpf):
     pattern = r"^\d{3}\.\d{3}\.\d{3}-\d{2}$"
     
     if re.match(pattern, cpf):
-        print("CPF válido")
+        print("\nCPF válido")
     else:
-        print("CPF inválido")
+        print("\nCPF inválido")
 
 def main():
     cpf = input("Digite o CPF: ")
