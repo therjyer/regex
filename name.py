@@ -10,7 +10,7 @@ def verificar_nome(nome):
 
 def main():
     while True:
-        nome = input("Digite o nome (ou 'exit' para sair): ")
+        nome = input("Digite o nome: ")
 
         if nome.lower() == 'exit':
             break
