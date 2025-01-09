@@ -1,7 +1,7 @@
 import re
 
 def verificar_senha(senha):
-    pattern = r"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8}$"
+    pattern = r"^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8}$"
     
     if re.match(pattern, senha):
         print("\nSenha válida")
