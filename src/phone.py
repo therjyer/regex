@@ -1,7 +1,7 @@
 import re
 
 def verificar_telefone(telefone):
-    pattern = r"^(?:\(\d{2}\)\s?|(\d{2}\s))9\d{4}-?\d{4}$"
+    pattern = r"^(\(\d{2}\)\s9\d{4}-?\d{4}|\d{2}\s9\d{8})$"
     
     if re.match(pattern, telefone):
         print("\nTelefone válido")
